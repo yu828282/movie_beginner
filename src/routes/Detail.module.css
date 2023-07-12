@@ -1,0 +1,89 @@
+.container {
+    height: 100%;
+    display: flex; /*내용크기에 맞춰 가로방향으로 그러니까 오른쪽으로 덧붙인다. */
+    justify-content: center;
+    background-color: #eff3f7;
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+    position: relative;
+  }
+  
+  .loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+  }
+  .movie {
+    background-color: black;
+    position: relative;
+  }
+  .movie__bgimg{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position:center top;
+    position: absolute;
+    filter: brightness(0.4);
+  }
+
+  .movie__header {
+    min-height: 200px;
+    padding: 50px;
+    position: relative;
+    z-index: 10;
+  }
+  .movie__big__title {
+    align-items: flex-start;
+    display: flex;
+    margin-top: 112px;
+  }
+  .movie__img {
+    border-width: 0;
+    margin: 7px 24px 0 0;
+    width: 230px;
+  }
+  .movie__title {
+    max-height: 300px;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-weight: 500;
+    align-items: flex-end;
+    display: flex;
+    width: 100%;
+    word-break: keep-all;
+  }
+  .movie__year {
+    margin-top: 2px;
+    fill: #5f6368;
+    stop-color: #5f6368;
+    line-height: 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.025em;
+    font-weight: 400;
+  }
+  .movie__rate__row {
+    align-items: flex-start;
+    display: flex;
+    margin-top: 10px;
+  }
+  .movie__rate {
+    padding-right: 30px;
+    min-width: 96px;
+  }
+  .movie__content {
+    padding: 0 50px 200px 50px;
+    font-size: 0.975rem;
+    font-weight: 300;
+    letter-spacing: 0.0142857143em;
+    line-height: 1.25rem;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    position: relative;
+  }
+  .movie__genres {
+    margin-top: 50px;
+  }
